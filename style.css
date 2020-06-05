@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700,900&subset=cyrillic");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&subset=cyrillic');
+
+@keyframes header_anim {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+body {
+  margin: 40px;
+  padding: 40px;
+  background: url(https://store-images.s-microsoft.com/image/apps.53076.13510798887304077.e4491620-f919-441c-b5c4-78f2b323e231.571f1616-608c-45a3-be45-c562947f14ff?mode=scale&q=90&h=1080&w=1920)
+}
+
+h1 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 8em;
+  font-weight: 700;
+}
+
+
+p {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+input[type='checkbox'] {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.body1 {
+  display: flex;
+  flex-direction: column;
+}
+.newTask {
+  display: flex;
+  justify-content: center;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.worksheet {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.task {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background:white;
+  padding: 5px;
+  padding-right: 10px; 
+  border: solid 1px black; 
+  flex-basis: 50%;
+  align-items: flex-start;
+  height: 150px;
+}
+
+.taskName {
+  align-self: flex-start;
+}
+
+.taskDate {
+  align-self: flex-start;
+}
+
+.taskCancel {
+  align-self: flex-end;
+}
+
+.taskDone {
+  align-self: flex-end;
+}
+
+.inputTask {
+  padding-right: 10px;
+}
+
+.selectPriority {
+  padding-right: 10px;
+}
+
+.filterCompleted {
+  padding-right: 20px;
+}
+
+.filterHigh {
+  padding-right: 20px;
+}
+
+.filterMedium {
+  padding-right: 20px;
+}
+
+.filterLow {
+  padding-right: 20px;
+}
+
+.priorityTask {
+  padding-right: 10px;
+}
+
+.deleteTask {
+  padding-left: 10px;
+}
