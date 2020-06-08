@@ -10,49 +10,49 @@
     <div class="body1">
         <div class="newTask">
             <div class="inputTask">
-                <input type="text" size="40">
+                <input type="text" size="40" value="Введите вашу задачу..." id='inputTask'>
             </div>
             <div class="selectPriority">
-                <select>
+                <select id="select">
                     <option selected="selected">Выберите приоритет</option>
                     <option>Высокий</option>
                     <option>Средний</option>
                     <option>Низкий</option>
                 </select>
-            <br><br></div>
+            <br><br></div>  
             <div class="addTask">
-                <button><img src="https://psv4.userapi.com/c856220/u88430898/docs/d1/4b32b96b7c3a/add.png?extra=XifIOyOzKHh84Z5tmKdCqXj8me4TYKPhao5ZAf75v9M6m7q5t0VXKoW8HUaH1TsVeqscHAWQ26iDoyM8j16JwScDZ9FTFMWjpafmTtnZQleho_GCYqikbzgE-NG8WTqp2ytZC7LJCjZ_0sL_MnTam2o">
+                <button id="addTask"><img src="img\add.png">
             </div>
         </div>
         <div class="filters">
-            <div class="filterCompleted"><input type="checkbox">Завершенные</div>
-            <div class="filterHigh"><input type="checkbox">Высокий</div>
-            <div class="filterMedium"><input type="checkbox">Средний</div>
-            <div class="filterLow"><input type="checkbox">Низкий</div>
-            <div class="filterDate">
+            <div class="filter-type" name="Completed"><input type="checkbox">Завершенные</div>
+            <div class="filter-type" name="High"><input type="checkbox">Высокий</div>
+            <div class="filter-type" name="Medium"><input type="checkbox">Средний</div>
+            <div class="filter-type" name="Low"><input type="checkbox">Низкий</div>
+            <div class="filter-type" name="Date">
                 <button>
-                    <img src="https://psv4.userapi.com/c856528/u88430898/docs/d2/dfdb1a0fcc0f/calendar.png?extra=gJAk_LDtRBrMrje2Il9-2wgj6D4mijHtmMdbhdadTAIr80b4z71IbF_GpkUueb-wLEpmLnL9CWgl5i0UE8YeQ8cjnu_xfR74zc28teKmipcsomtiAn10PtajxFjGi7OS0SRhGRW6nnKgn1NmFRYuXIA">
+                    <img src="img\data.png">
                     По дате
                 </button>
             </div><br>
             <br>
         </div>
         <div class="worksheet">
-            <div class="priorityTask"><p>Высокий</p></div>
+            <div class="priorityTask" id="priorityTask"><p>Высокий</p></div>
             <div class="task">
-                <div class="taskName"><p>Сделать дз по математике</p></div>
+                <div class="taskName" id="taskName">Сделать дз по математике</div>
                 <div class="taskCancel"><button>
-                    <img src="https://psv4.userapi.com/c856528/u88430898/docs/d3/5c0f34651c6a/close.png?extra=Gt6019LWGyAnxmTP9lw8xBLfJCC_Xk0NJSr-Ie2EIglzw-oMzOmIAyJt7V7QgAXmEXw315k0X8eZA6J9BG-eA1uOb2Out9e0iuurubUyNU_EZb9-UTBErfvTshBQYzp3nTWD9u_4roZdWIXA24JApyo">
+                    <img src="img\close.png">
                 </button></div>
                 <div class="taskDate"><p>Тут будет дата</p></div>
                 <div class="taskDone"><button>
-                    <img src="https://psv4.userapi.com/c856528/u88430898/docs/d9/34bc819e1534/foursquare-check-in.png?extra=Hq3829_iXVERXW0VLOwtO7hAnTfkosttaRknI-pwUDenlNRFDG7IsJTtiIQv1Uq6pEc9fp3y7mWUqniLbS8ioXpe5izn0mHmkUbn6vC6LmN1ebngapJl5BaqxBWSiCK_0r1hfkhIhkYqV62sbqjOFfg">
+                    <img src="img\check.png">
                 </button></div>
             </div>
-            <div class="deleteTask"><button>
-                <img src="https://psv4.userapi.com/c856528/u88430898/docs/d15/05112e260ae0/trash.png?extra=TP-U1tPMtYhSO3eo7IDA_laiZaCSp48_I0sl62WC57n3LyTHD3yiqiVwq8-jI92IY8L-QkNcnagMkV_yejcee1gp1zi-hJVrCHag05hfdyD4Csh9qH9xIj27SAFaCGBcv36fQqcZUhwHBvr-3B24AjA">
+            <div class="button" name="deleteTask"><button>
+                <img src="img\delete.png">
             </button></div>
         </div>
-
+<script src="todo.js"></script>
 </body>
 </html>

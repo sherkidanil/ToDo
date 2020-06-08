@@ -75,6 +75,11 @@ input[type='checkbox'] {
 
 .taskName {
   align-self: flex-start;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  
 }
 
 .taskDate {
@@ -97,19 +102,7 @@ input[type='checkbox'] {
   padding-right: 10px;
 }
 
-.filterCompleted {
-  padding-right: 20px;
-}
-
-.filterHigh {
-  padding-right: 20px;
-}
-
-.filterMedium {
-  padding-right: 20px;
-}
-
-.filterLow {
+.filter-type {
   padding-right: 20px;
 }
 
@@ -117,6 +110,25 @@ input[type='checkbox'] {
   padding-right: 10px;
 }
 
-.deleteTask {
+
+.button {
   padding-left: 10px;
+}
+
+.edit {
+  height: 25px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  display: block;
+  /* замена внутреннего отступа рамкой (по-прежнему 3px, и содержимое не смещается) */
+  border: 3px solid blue;
+  padding: 0px;
+
+}
+
+.edit:focus {
+  /* удаление обводки фокуса в Safari */
+  outline: none;
 }
