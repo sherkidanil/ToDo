@@ -66,7 +66,8 @@ input[type='checkbox'] {
   justify-content: space-evenly;
   background:white;
   padding: 5px;
-  padding-right: 10px; 
+  padding-right: 10px;
+  padding-left: 10px; 
   border: solid 1px black; 
   flex-basis: 50%;
   align-items: flex-start;
@@ -80,6 +81,14 @@ input[type='checkbox'] {
   font-size: 1em;
   font-weight: 300;
   
+}
+
+.taskDate {
+  align-self: flex-start;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
 }
 
 .taskDate {
