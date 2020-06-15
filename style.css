@@ -61,7 +61,7 @@ input[type='checkbox'] {
 
 .task {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   flex-direction: column;
   justify-content: space-evenly;
   background:white;
@@ -107,7 +107,7 @@ input[type='checkbox'] {
   padding-right: 10px;
 }
 
-.selectPriority {
+.select{
   padding-right: 10px;
 }
 

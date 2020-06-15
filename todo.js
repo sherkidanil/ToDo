@@ -8,8 +8,11 @@ addTask.onclick = function() {
   ws.taskName=document.getElementsByName('caption')[n];
   ws.changeName(ws.taskName);
   deleteButton=document.getElementsByName('deleteBut')[n];
-  n++;
   ws.deleteTask(deleteButton);
+  doneButton=document.getElementsByName("doneBut")[n];
+  cancelButton=document.getElementsByName("cancelBut")[n];
+  ws.done(doneButton,cancelButton);
+  n++;
 }
 
 function Worksheet(num, taskName, priority) {
@@ -23,13 +26,13 @@ function Worksheet(num, taskName, priority) {
       <div class="priorityTask" id="priorityTask">Высокий</div>
       <div class="task" id="task">
         <div class="taskName" id="taskName" name="caption"><div id="newTaskName">Не задано</div></div>
-        <div class="taskCancel"><button>
+        <div class="taskCancel"><button name='cancelBut'>
             <img src="img/close.png">
         </button></div>
-        <div class="taskDate">Тут будет дата</div>
-        <div class="taskDone"><button>
+        <div class="taskDone"><button name="doneBut">
             <img src="img/check.png">
         </button></div>
+        <div class="taskDate">Тут будет дата</div>
     </div>
     <div class="button"><button id="deleteBut" name="deleteBut">
         <img src="img/delete.png">
@@ -77,6 +80,17 @@ function Worksheet(num, taskName, priority) {
           n--;
         }
       }
+
+    this.isDone = false;
+    this.done=function(doneButton, cancelButton) {
+      doneButton.onclick=function() {
+        this.isDone=true;
+        doneInf=document.createElement('p');
+        doneInf.innerHTML='Завершено в ';
+        cancelButton.remove();
+        doneButton.replaceWith(doneInf);
+      };
+    };
     };
 
 }

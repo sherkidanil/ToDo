@@ -12,7 +12,7 @@
             <div class="inputTask">
                 <input type="text" size="40" value="Введите вашу задачу..." id='inputTask'>
             </div>
-            <div class="selectPriority">
+            <div class="select">
                 <select id="select">
                     <option selected="selected">Выcокий</option>
                     <option>Средний</option>
@@ -24,7 +24,11 @@
             </div>
         </div>
         <div class="filters">
-            <div class="filter-type" name="Completed"><input type="checkbox">Завершенные</div>
+            <div class="sellect" name="Completed"><select id="selectComplete">
+                <option selected="selected">Все</option>
+                <option>Завершенные</option>
+                <option>Незавершенные</option>
+            </select>
             <div class="filter-type" name="High"><input type="checkbox">Высокий</div>
             <div class="filter-type" name="Medium"><input type="checkbox">Средний</div>
             <div class="filter-type" name="Low"><input type="checkbox">Низкий</div>
